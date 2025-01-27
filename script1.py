@@ -8,6 +8,6 @@ dls = ImageDataLoaders.from_name_func(
 dls.show_batch()  # Affiche un lot d’images
 learn = vision_learner(dls, resnet34, metrics=error_rate)
 learn.fine_tune(1)  # Entraîne le modèle
-img = PILImage.create(path / "images" / "Abyssinian_1.jpg")  # Exemple d’image
+'''img = PILImage.create(path / "images" / "Abyssinian_1.jpg")  # Exemple d’image
 pred, _, probs = learn.predict(img)
-print(f"Prediction: {pred}, Probability: {probs[1]:.4f}")
+print(f"Prediction: {pred}, Probability: {probs[1]:.4f}")'''
